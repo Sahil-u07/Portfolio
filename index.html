@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sahil Lenka — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#060916;--bg2:#0f1731;--text:#edf2ff;--muted:#b7c2e8;--accent:#6ea8ff;--accent2:#4de1c1;--card:rgba(15,23,49,.72);--stroke:rgba(255,255,255,.13)
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Inter,sans-serif;background:radial-gradient(1200px 500px at 90% -10%,#29419b44,transparent),radial-gradient(800px 450px at -10% 20%,#13b8a33a,transparent),var(--bg);color:var(--text)}
+    .container{width:min(1150px,92%);margin:auto}
+    .nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(12px);background:#060916aa;border-bottom:1px solid var(--stroke)}
+    .nav-inner{display:flex;justify-content:space-between;align-items:center;padding:.9rem 0}
+    .logo{font-family:Sora,sans-serif;font-weight:700}
+    .links a{text-decoration:none;color:var(--muted);margin-left:1rem}
+    .hero{padding:4rem 0 2rem;display:grid;grid-template-columns:1.1fr .9fr;gap:1.4rem;align-items:center}
+    .chip{display:inline-block;padding:.35rem .7rem;border:1px solid var(--stroke);border-radius:999px;color:var(--accent2);font-size:.9rem;margin-bottom:1rem}
+    h1{font-family:Sora,sans-serif;font-size:clamp(2rem,5vw,4rem);line-height:1.08;margin-bottom:1rem}
+    .hero p{color:var(--muted);max-width:58ch}
+    .cta{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1.2rem}
+    .btn{padding:.75rem 1rem;border-radius:12px;text-decoration:none;color:white;border:1px solid var(--stroke)}
+    .btn.primary{background:linear-gradient(120deg,var(--accent),#7f6bff);border:none}
+    .glass{background:var(--card);border:1px solid var(--stroke);border-radius:20px}
+    .hero-media{padding:.7rem}
+    .hero-media img{width:100%;height:500px;object-fit:cover;border-radius:14px}
+    section{margin:1.3rem 0}
+    .section-title{font-family:Sora,sans-serif;margin-bottom:.8rem;font-size:1.45rem}
+    .grid{display:grid;gap:1rem}
+    .kpi{grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
+    .kpi .item,.card{padding:1rem}
+    .item h3{font-size:1.4rem}
+    .item p,.card p,.card li{color:var(--muted)}
+    .projects{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+    .tags{font-size:.85rem;color:#c6d2ff;margin:.3rem 0 .6rem}
+    .gallery{grid-template-columns:1.4fr .8fr .8fr}
+    .gallery img{width:100%;height:340px;object-fit:cover;border-radius:15px}
+    .timeline{display:grid;gap:.7rem}
+    .exp{padding:1rem;border-left:2px solid #5a7df0}
+    ul{padding-left:1.1rem}
+    footer{padding:2rem 0;color:var(--muted);text-align:center}
+    @media (max-width:980px){.hero{grid-template-columns:1fr}.hero-media img{height:420px}.gallery{grid-template-columns:1fr}.gallery img{height:260px}}
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <div class="logo">Sahil Lenka</div>
+      <div class="links">
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <header class="hero">
+      <div>
+        <span class="chip">B.Tech CSE (AIML) • Manipal University Jaipur</span>
+        <h1>Building secure, scalable products with <span style="color:var(--accent2)">clean engineering</span>.</h1>
+        <p>
+          I'm Sahil Lenka, a full-stack developer focused on production-ready web platforms, API design, and security-first implementation.
+          I enjoy transforming ideas into reliable products used by real users.
+        </p>
+        <div class="cta" id="contact">
+          <a class="btn primary" href="mailto:sahillenka44@gmail.com">Hire / Connect</a>
+          <a class="btn" target="_blank" href="https://github.com/Sahii-u07">GitHub</a>
+          <a class="btn" target="_blank" href="https://www.linkedin.com/in/sahil-lenka-3608a2311">LinkedIn</a>
+        </div>
+      </div>
+      <div class="glass hero-media">
+        <img src="assets/profile-main.jpg" alt="Sahil portrait" />
+      </div>
+    </header>
+
+    <section class="grid kpi">
+      <div class="glass item"><h3>14+</h3><p>Open-source PR contributions</p></div>
+      <div class="glass item"><h3>10+</h3><p>Production commits in internship</p></div>
+      <div class="glass item"><h3>3x</h3><p>Hackathon finalist</p></div>
+      <div class="glass item"><h3>Top 35</h3><p>HackRC 6.0 among 10,000+ teams</p></div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Photo Highlights</h2>
+      <div class="grid gallery">
+        <div class="glass" style="padding:.5rem"><img src="assets/profile-main.jpg" alt="Sahil main"></div>
+        <div class="glass" style="padding:.5rem"><img src="assets/profile-back.jpg" alt="Sahil scenic"></div>
+        <div class="glass" style="padding:.5rem"><img src="assets/profile-classic.jpg" alt="Sahil traditional"></div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+        <article class="glass exp">
+          <h3>Web Development Intern — IOTA Studio AI</h3>
+          <p>April 2025 – August 2025 • Remote</p>
+          <ul>
+            <li>Built and deployed official full-stack website using React.js, Node.js, and REST APIs.</li>
+            <li>Contributed 10+ production commits merged in the main branch.</li>
+            <li>Designed cleaner frontend-backend separation with scalable MongoDB/SQL integration.</li>
+          </ul>
+        </article>
+        <article class="glass exp">
+          <h3>Software Development Intern — Sundarone Private Limited</h3>
+          <p>February 2024 – May 2024</p>
+          <ul>
+            <li>Integrated Razorpay payment gateway and improved conversions.</li>
+            <li>Iterated UX flows and improved user retention.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="grid projects">
+        <article class="glass card">
+          <h3>Beehive Security Audit Tool</h3>
+          <p class="tags">Python • Flask • GitHub Actions</p>
+          <p>Built a static scanner API with endpoint-level findings and reduced false positives via line-reference support. Contributed in testing, architecture, and hardening.</p>
+        </article>
+        <article class="glass card">
+          <h3>Dynamic DICOM Routing Module</h3>
+          <p class="tags">Python • pynetdicom • Docker Compose</p>
+          <p>Implemented adaptive routing logic using weighted destination scoring and health checks across multiple Orthanc nodes.</p>
+        </article>
+        <article class="glass card">
+          <h3>ProjectMUJToppers</h3>
+          <p class="tags">React.js • Node.js • MongoDB</p>
+          <p>Deployed full-stack university toppers platform with authentication, admin dashboard, and student database integration.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Skills</h2>
+      <div class="grid projects">
+        <div class="glass card"><h3>Languages</h3><p>Python, JavaScript, TypeScript, C++, Java, SQL, HTML/CSS</p></div>
+        <div class="glass card"><h3>Frameworks</h3><p>React.js, Node.js, Express.js, Flask, FastAPI, Tailwind CSS</p></div>
+        <div class="glass card"><h3>Tools & Core</h3><p>Git, Docker, GitHub Actions, Linux, Postman, REST APIs, JWT Auth, RBAC</p></div>
+      </div>
+    </section>
+
+    <footer>© 2026 Sahil Lenka • Crafted for impact.</footer>
+  </div>
+</body>
+</html>
